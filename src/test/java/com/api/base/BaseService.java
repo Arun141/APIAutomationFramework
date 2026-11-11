@@ -4,6 +4,7 @@ import static io.restassured.RestAssured.*;
 import java.util.Map;
 
 import com.api.filters.LoggingFilter;
+import com.api.utils.ConfigReader;
 
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
@@ -11,7 +12,7 @@ import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 public class BaseService { //Wrapper for Rest Assured, Base URI, creating request, handling response
 	
-	private static final String BASE_URL = "https://api.practicesoftwaretesting.com";
+	private static final String BASE_URL = ConfigReader.get("base.url");
 	private RequestSpecification requestSpecification;
 	
 	static {

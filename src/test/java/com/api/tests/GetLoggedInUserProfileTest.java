@@ -7,14 +7,15 @@ import com.api.base.UserService;
 import com.api.models.request.LoginRequest;
 import com.api.models.response.LoginResponse;
 import com.api.models.response.UserProfileResponse;
+import com.api.utils.ConfigReader;
 
 import io.restassured.response.Response;
 
-public class GetLoggedInUserProfile {
+public class GetLoggedInUserProfileTest {
 
 	@Test(description = "Verify the Logged In User Profile..")
 	public void loginTest() {
-		LoginRequest loginRequest = new LoginRequest("customer@practicesoftwaretesting.com", "welcome01");
+		LoginRequest loginRequest = new LoginRequest(ConfigReader.get("api.username"), ConfigReader.get("api.password"));
 		UserService userService = new UserService();
 		Response response = userService.login(loginRequest);
 		LoginResponse loginResponse = response.as(LoginResponse.class);
