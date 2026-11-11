@@ -5,12 +5,17 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
+  schedule:
+    - cron: 00 17 * * *
 
 jobs:
   build:
 
     runs-on: ubuntu-latest
-
+    permissions:
+      contents: read
+      checks: write
+      issues: write
     steps:
     - uses: actions/checkout@v4
     
@@ -22,3 +27,18 @@ jobs:
         cache: maven
     - name: Execute Tests Script
       run: mvn clean test -Dsuite=suite -X
+
+    - name: Upload a Build Artifact
+      if: always()
+      uses: actions/upload-artifact@v7.0.2
+      with:
+        name: Logs
+        path: logs/
+
+    - name: Publish Test Report
+      if: always()
+      uses: dorny/test-reporter@v1
+      with:
+        name: TestNG Results
+        path: target/surefire-reports/junitreports/TEST-*.xml
+        reporter: java-junit
