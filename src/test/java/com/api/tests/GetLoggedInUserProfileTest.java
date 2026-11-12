@@ -23,11 +23,11 @@ public class GetLoggedInUserProfileTest {
 		UserService userService = new UserService();
 		Response response = userService.login(loginRequest);
 		LoginResponse loginResponse = response.as(LoginResponse.class);
-		
+		response.then().assertThat().body(matchesJsonSchemaInClasspath("schemas/login-response-schema.json"));
+
 		response = userService.getLoginUserProfile(loginResponse.getAccess_token());
 		UserProfileResponse userprofile = response.as(UserProfileResponse.class);
 		
-		response.then().assertThat().body(matchesJsonSchemaInClasspath("schemas/login-response-schema.json"));
 //		Assert.assertTrue(loginResponse.getAccess_token() != null);
 		Assert.assertEquals(userprofile.getFirst_name(), "Jane");
 	}
