@@ -1,6 +1,7 @@
 package com.api.tests;
 
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.api.base.UserService;
@@ -11,6 +12,7 @@ import com.api.utils.ConfigReader;
 
 import io.restassured.response.Response;
 
+@Listeners(com.api.listeners.TestListener.class)
 public class GetLoggedInUserProfileTest {
 
 	@Test(description = "Verify the Logged In User Profile..")

@@ -1,6 +1,7 @@
 package com.api.tests;
 
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.api.base.BrandService;
@@ -12,6 +13,7 @@ import com.api.models.response.SendNewContactResponse;
 
 import io.restassured.response.Response;
 
+@Listeners(com.api.listeners.TestListener.class)
 public class UpdateBrandTest {
 	
 	@Test(description = "Create and Update a New Brand..")
