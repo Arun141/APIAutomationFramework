@@ -1,0 +1,1078 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>API Automation Report</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa -report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">API Automation Framework</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Nov 12, 2026 09:53:41 AM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">loginTest</p>
+            <p class="text-sm">
+              <span>9:53:42 AM</span> / <span>00:00:01:763</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">loginTest</h5>
+<span class='badge badge-success'>11.12.2026 9:53:42 AM</span>
+<span class='badge badge-danger'>11.12.2026 9:53:43 AM</span>
+<span class='badge badge-default'>00:00:01:763</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5">Verify if Compliant Message has been Sent..</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:53:43 AM</td>
+        <td>
+          Request: POST https://api.practicesoftwaretesting.com/messages
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:53:43 AM</td>
+        <td>
+          Request Header:Accept=*/*
+Content-Type=application/json
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:53:43 AM</td>
+        <td>
+          Request PayLoad:{"name":"John Dube","email":"john@dube.example","subject":"website","message":"Something is wrong with the website"}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:53:43 AM</td>
+        <td>
+          Reponse Status:200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:53:43 AM</td>
+        <td>
+          Response Header:Date=Thu, 12 Nov 2026 09:53:43 GMT
+Server=Apache/2.4.52 (Ubuntu)
+Cache-Control=no-cache, private
+Access-Control-Allow-Origin=*
+Access-Control-Expose-Headers=Content-Disposition
+Upgrade=h2
+Connection=Upgrade, close
+Vary=Accept-Encoding
+Content-Encoding=gzip
+Content-Length=178
+Content-Type=application/json
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:53:43 AM</td>
+        <td>
+          Response Body:{
+    "name": "John Dube",
+    "email": "john@dube.example",
+    "subject": "website",
+    "message": "Something is wrong with the website",
+    "status": "NEW",
+    "id": "01m77jtvh1qbcse115002qzaaz",
+    "created_at": "2026-11-12 09:53:43"
+}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:53:43 AM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="2"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">DeleteCart</p>
+            <p class="text-sm">
+              <span>9:53:42 AM</span> / <span>00:00:02:320</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">DeleteCart</h5>
+<span class='badge badge-success'>11.12.2026 9:53:42 AM</span>
+<span class='badge badge-danger'>11.12.2026 9:53:44 AM</span>
+<span class='badge badge-default'>00:00:02:320</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5">Create and Delete a Cart..</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:53:43 AM</td>
+        <td>
+          Request: POST https://api.practicesoftwaretesting.com/carts
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:53:43 AM</td>
+        <td>
+          Request Header:Accept=*/*
+Content-Type=application/json
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:53:43 AM</td>
+        <td>
+          Request PayLoad:null
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:53:43 AM</td>
+        <td>
+          Reponse Status:201
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:53:43 AM</td>
+        <td>
+          Response Header:Date=Thu, 12 Nov 2026 09:53:43 GMT
+Server=Apache/2.4.52 (Ubuntu)
+Cache-Control=no-cache, private
+Access-Control-Allow-Origin=*
+Access-Control-Expose-Headers=Content-Disposition
+Upgrade=h2
+Connection=Upgrade, close
+Transfer-Encoding=chunked
+Content-Type=application/json
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:53:43 AM</td>
+        <td>
+          Response Body:{
+    "id": "01m77jtvh78xrqjaan82ph4tn0"
+}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:53:44 AM</td>
+        <td>
+          Request: DELETE https://api.practicesoftwaretesting.com/carts/01m77jtvh78xrqjaan82ph4tn0
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:53:44 AM</td>
+        <td>
+          Request Header:Accept=*/*
+Content-Type=application/json
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:53:44 AM</td>
+        <td>
+          Request PayLoad:null
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:53:44 AM</td>
+        <td>
+          Reponse Status:204
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:53:44 AM</td>
+        <td>
+          Response Header:Date=Thu, 12 Nov 2026 09:53:44 GMT
+Server=Apache/2.4.52 (Ubuntu)
+Cache-Control=no-cache, private
+Access-Control-Allow-Origin=*
+Access-Control-Expose-Headers=Content-Disposition
+Upgrade=h2
+Connection=Upgrade, close
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:53:44 AM</td>
+        <td>
+          Response Body:
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:53:44 AM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="3"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">loginTest</p>
+            <p class="text-sm">
+              <span>9:53:42 AM</span> / <span>00:00:02:161</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">loginTest</h5>
+<span class='badge badge-success'>11.12.2026 9:53:42 AM</span>
+<span class='badge badge-danger'>11.12.2026 9:53:44 AM</span>
+<span class='badge badge-default'>00:00:02:161</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5">Verify the Logged In User Profile..</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:53:43 AM</td>
+        <td>
+          Request: POST https://api.practicesoftwaretesting.com/users/login
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:53:43 AM</td>
+        <td>
+          Request Header:Accept=*/*
+Content-Type=application/json
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:53:43 AM</td>
+        <td>
+          Request PayLoad:{"email":"customer@practicesoftwaretesting.com","password":"welcome01"}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:53:43 AM</td>
+        <td>
+          Reponse Status:200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:53:43 AM</td>
+        <td>
+          Response Header:Date=Thu, 12 Nov 2026 09:53:43 GMT
+Server=Apache/2.4.52 (Ubuntu)
+Cache-Control=no-cache, private
+Access-Control-Allow-Origin=*
+Access-Control-Expose-Headers=Content-Disposition
+Upgrade=h2
+Connection=Upgrade, close
+Vary=Accept-Encoding
+Content-Encoding=gzip
+Content-Length=383
+Content-Type=application/json
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:53:43 AM</td>
+        <td>
+          Response Body:{
+    "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL2FwaS5wcmFjdGljZXNvZnR3YXJldGVzdGluZy5jb20vdXNlcnMvbG9naW4iLCJpYXQiOjE3OTQ0NzcyMjMsImV4cCI6MTc5NDQ3NzUyMywibmJmIjoxNzk0NDc3MjIzLCJqdGkiOiJhY3p0QjJzaFpLNWU4VVVwIiwic3ViIjoiMDFNNzdGU0FLSEhYUlhLMFYwRDlFMzYwTTAiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3Iiwicm9sZSI6InVzZXIifQ.MqXnfhDktSpja7BNadF_g_0Vz91x9qHZT-nDiu113tE",
+    "token_type": "bearer",
+    "expires_in": 300
+}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:53:44 AM</td>
+        <td>
+          Request: GET https://api.practicesoftwaretesting.com/users/me
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:53:44 AM</td>
+        <td>
+          Request Header:Accept=*/*
+Authorization=Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL2FwaS5wcmFjdGljZXNvZnR3YXJldGVzdGluZy5jb20vdXNlcnMvbG9naW4iLCJpYXQiOjE3OTQ0NzcyMjMsImV4cCI6MTc5NDQ3NzUyMywibmJmIjoxNzk0NDc3MjIzLCJqdGkiOiJhY3p0QjJzaFpLNWU4VVVwIiwic3ViIjoiMDFNNzdGU0FLSEhYUlhLMFYwRDlFMzYwTTAiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3Iiwicm9sZSI6InVzZXIifQ.MqXnfhDktSpja7BNadF_g_0Vz91x9qHZT-nDiu113tE
+Content-Type=application/json
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:53:44 AM</td>
+        <td>
+          Request PayLoad:{"email":"customer@practicesoftwaretesting.com","password":"welcome01"}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:53:44 AM</td>
+        <td>
+          Reponse Status:200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:53:44 AM</td>
+        <td>
+          Response Header:Date=Thu, 12 Nov 2026 09:53:44 GMT
+Server=Apache/2.4.52 (Ubuntu)
+Cache-Control=no-cache, private
+Access-Control-Allow-Origin=*
+Access-Control-Expose-Headers=Content-Disposition
+Vary=Authorization,Accept-Encoding
+Upgrade=h2
+Connection=Upgrade, close
+Content-Encoding=gzip
+Content-Length=264
+Content-Type=application/json
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:53:44 AM</td>
+        <td>
+          Response Body:{
+    "id": "01M77FSAKHHXRXK0V0D9E360M0",
+    "provider": null,
+    "first_name": "Jane",
+    "last_name": "Doe",
+    "phone": null,
+    "dob": "1980-02-02",
+    "email": "customer@practicesoftwaretesting.com",
+    "totp_enabled": false,
+    "created_at": "2026-11-12 09:00:27",
+    "address": {
+        "street": "Test street 98",
+        "house_number": null,
+        "city": "Vienna",
+        "state": null,
+        "country": "Austria",
+        "postal_code": null
+    }
+}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:53:44 AM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="4"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">loginTest</p>
+            <p class="text-sm">
+              <span>9:53:42 AM</span> / <span>00:00:02:047</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">loginTest</h5>
+<span class='badge badge-success'>11.12.2026 9:53:42 AM</span>
+<span class='badge badge-danger'>11.12.2026 9:53:44 AM</span>
+<span class='badge badge-default'>00:00:02:047</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5">Create and Update a New Brand..</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:53:43 AM</td>
+        <td>
+          Request: POST https://api.practicesoftwaretesting.com/brands
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:53:43 AM</td>
+        <td>
+          Request Header:Accept=*/*
+Content-Type=application/json
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:53:43 AM</td>
+        <td>
+          Request PayLoad:{"name":"abc brand1","slug":"abc-brand1"}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:53:43 AM</td>
+        <td>
+          Reponse Status:201
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:53:43 AM</td>
+        <td>
+          Response Header:Date=Thu, 12 Nov 2026 09:53:43 GMT
+Server=Apache/2.4.52 (Ubuntu)
+Cache-Control=no-cache, private
+Access-Control-Allow-Origin=*
+Access-Control-Expose-Headers=Content-Disposition
+Upgrade=h2
+Connection=Upgrade, close
+Transfer-Encoding=chunked
+Content-Type=application/json
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:53:43 AM</td>
+        <td>
+          Response Body:{
+    "name": "abc brand1",
+    "slug": "abc-brand1",
+    "id": "01m77jtvj98c1det2ms2ztw3ah"
+}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:53:44 AM</td>
+        <td>
+          Request: PUT https://api.practicesoftwaretesting.com/brands/01m77jtvj98c1det2ms2ztw3ah
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:53:44 AM</td>
+        <td>
+          Request Header:Accept=*/*
+Content-Type=application/json
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:53:44 AM</td>
+        <td>
+          Request PayLoad:{"name":"abc brand123","slug":"abc-brand123"}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:53:44 AM</td>
+        <td>
+          Reponse Status:409
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:53:44 AM</td>
+        <td>
+          Response Header:Date=Thu, 12 Nov 2026 09:53:44 GMT
+Server=Apache/2.4.52 (Ubuntu)
+Cache-Control=no-cache, private
+Access-Control-Allow-Origin=*
+Access-Control-Expose-Headers=Content-Disposition
+Upgrade=h2
+Connection=Upgrade, close
+Transfer-Encoding=chunked
+Content-Type=application/json
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:53:44 AM</td>
+        <td>
+          Response Body:{
+    "message": "Duplicate Entry"
+}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>9:53:44 AM</td>
+        <td>
+          <textarea readonly class="code-block">java.lang.NullPointerException
+	at io.restassured.path.json.JsonPath.getBoolean(JsonPath.java:214)
+	at com.api.tests.UpdateBrandTest.loginTest(UpdateBrandTest.java:31)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+</textarea>
+          
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="5"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">loginTest</p>
+            <p class="text-sm">
+              <span>9:53:43 AM</span> / <span>00:00:00:422</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">loginTest</h5>
+<span class='badge badge-success'>11.12.2026 9:53:43 AM</span>
+<span class='badge badge-danger'>11.12.2026 9:53:44 AM</span>
+<span class='badge badge-default'>00:00:00:422</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5">Verify if Compliant Message has been Sent..</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:53:44 AM</td>
+        <td>
+          Request: POST https://api.practicesoftwaretesting.com/messages
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:53:44 AM</td>
+        <td>
+          Request Header:Accept=*/*
+Content-Type=application/json
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:53:44 AM</td>
+        <td>
+          Request PayLoad:{"name":"Jane Smith","email":"jane@smith.example","subject":"website","message":"Unable to load the product page"}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:53:44 AM</td>
+        <td>
+          Reponse Status:200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:53:44 AM</td>
+        <td>
+          Response Header:Date=Thu, 12 Nov 2026 09:53:44 GMT
+Server=Apache/2.4.52 (Ubuntu)
+Cache-Control=no-cache, private
+Access-Control-Allow-Origin=*
+Access-Control-Expose-Headers=Content-Disposition
+Upgrade=h2
+Connection=Upgrade, close
+Vary=Accept-Encoding
+Content-Encoding=gzip
+Content-Length=179
+Content-Type=application/json
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:53:44 AM</td>
+        <td>
+          Response Body:{
+    "name": "Jane Smith",
+    "email": "jane@smith.example",
+    "subject": "website",
+    "message": "Unable to load the product page",
+    "status": "NEW",
+    "id": "01m77jtw7p5kypbjtt7npcpy7s",
+    "created_at": "2026-11-12 09:53:44"
+}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:53:44 AM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="6"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">loginTest</p>
+            <p class="text-sm">
+              <span>9:53:44 AM</span> / <span>00:00:00:379</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">loginTest</h5>
+<span class='badge badge-success'>11.12.2026 9:53:44 AM</span>
+<span class='badge badge-danger'>11.12.2026 9:53:44 AM</span>
+<span class='badge badge-default'>00:00:00:379</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5">Verify if Compliant Message has been Sent..</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:53:44 AM</td>
+        <td>
+          Request: POST https://api.practicesoftwaretesting.com/messages
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:53:44 AM</td>
+        <td>
+          Request Header:Accept=*/*
+Content-Type=application/json
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:53:44 AM</td>
+        <td>
+          Request PayLoad:{"name":"Arun Kumar","email":"arun@kumar.example","subject":"website","message":"Checkout button is not working"}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:53:44 AM</td>
+        <td>
+          Reponse Status:200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:53:44 AM</td>
+        <td>
+          Response Header:Date=Thu, 12 Nov 2026 09:53:44 GMT
+Server=Apache/2.4.52 (Ubuntu)
+Cache-Control=no-cache, private
+Access-Control-Allow-Origin=*
+Access-Control-Expose-Headers=Content-Disposition
+Upgrade=h2
+Connection=Upgrade, close
+Vary=Accept-Encoding
+Content-Encoding=gzip
+Content-Length=180
+Content-Type=application/json
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:53:44 AM</td>
+        <td>
+          Response Body:{
+    "name": "Arun Kumar",
+    "email": "arun@kumar.example",
+    "subject": "website",
+    "message": "Checkout button is not working",
+    "status": "NEW",
+    "id": "01m77jtwkqgzt7j9zy3zt8a9b4",
+    "created_at": "2026-11-12 09:53:44"
+}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:53:44 AM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">java.lang.NullPointerException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.NullPointerException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>09:53:42 AM</td>
+<td>
+<a href="#" class="linked" test-id='4' id='4'>loginTest</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Nov 12, 2026 09:53:41 AM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Nov 12, 2026 09:53:44 AM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>5</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>1</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='83%'>
+<b>5</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='16%'><b>1</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='8%'><b>5</b> events passed</small></div>
+<div>
+<small data-tooltip='1%'><b>1</b> events failed,
+<b data-tooltip='%'>54</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"loginTest":1.763,"DeleteCart":2.32,"loginTest":2.161,"loginTest":2.047,"loginTest":0.422,"loginTest":0.379
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>Base URL</td>
+<td>https://api.practicesoftwaretesting.com</td>
+</tr>
+<tr>
+<td>Java Version</td>
+<td>11.0.32.1</td>
+</tr>
+<tr>
+<td>OS</td>
+<td>Linux</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 5,
+failParent: 1,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 5,
+failEvents: 1,
+warningEvents: 0,
+skipEvents: 0,
+infoEvents: 54
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c05cd28cde1617b9d0c05a831daff6cb97fd9fd5/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
