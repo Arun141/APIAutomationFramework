@@ -35,6 +35,13 @@ jobs:
         name: Logs
         path: logs/
 
+    - name: Upload Extent report
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: extent-report
+        path: target/extent-report/
+       
     - name: Publish Test Report
       if: always()
       uses: dorny/test-reporter@v1
