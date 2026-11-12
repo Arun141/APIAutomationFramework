@@ -1,5 +1,7 @@
 package com.api.tests;
 
+import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
+
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
@@ -25,7 +27,7 @@ public class GetLoggedInUserProfileTest {
 		response = userService.getLoginUserProfile(loginResponse.getAccess_token());
 		UserProfileResponse userprofile = response.as(UserProfileResponse.class);
 		
-		System.out.println(response.asPrettyString());
+		response.then().assertThat().body(matchesJsonSchemaInClasspath("schemas/login-response-schema.json"));
 //		Assert.assertTrue(loginResponse.getAccess_token() != null);
 		Assert.assertEquals(userprofile.getFirst_name(), "Jane");
 	}
