@@ -3,6 +3,9 @@ package com.api.filters;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import com.api.utils.ExtentManager;
+import com.aventstack.extentreports.ExtentTest;
+
 import io.restassured.filter.Filter;
 import io.restassured.filter.FilterContext;
 import io.restassured.response.Response;
@@ -17,7 +20,7 @@ public class LoggingFilter implements Filter{
 			FilterContext ctx) {
 		logRequest(requestSpec);
 		Response response = ctx.next(requestSpec, responseSpec);
-		logResponse(response);
+		logResponse(requestSpec, response);
 		return response;
 	}
 	
@@ -27,10 +30,19 @@ public class LoggingFilter implements Filter{
 		logger.info("Request PayLoad:"+ requestSpec.getBody());
 	}
 	
-	public void logResponse(Response response) {
+	public void logResponse(FilterableRequestSpecification requestSpec, Response response) {
 		logger.info("STATUS CODE:"+ response.getStatusCode());
 		logger.info("Response Header:"+ response.headers());
 		logger.info("Response Body:"+ response.getBody().prettyPrint());
+		ExtentTest t = ExtentManager.getTest();
+		if(t != null) {
+			t.info("Request: "+ requestSpec.getMethod() + " " + requestSpec.getURI());
+			t.info("Request Header:"+ requestSpec.getHeaders());
+			t.info("Request PayLoad:"+ requestSpec.getBody());
+			t.info("Reponse Status:"+ response.getStatusCode());
+			t.info("Response Header:"+ response.headers());
+			t.info("Response Body:"+ response.getBody().prettyPrint());
+		}
 	}
 
 }
