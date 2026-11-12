@@ -13,7 +13,7 @@ jobs:
 
     runs-on: ubuntu-latest
     permissions:
-      contents: read
+      contents: write
       checks: write
       issues: write
     steps:
@@ -41,7 +41,14 @@ jobs:
       with:
         name: extent-report
         path: target/extent-report/
-       
+
+    - name: Deploy report to GitHub Pages
+      if: always() && github.event_name != 'pull_request'
+      uses: JamesIves/github-pages-deploy-action@v4.8.0
+      with:
+        folder: target/extent-report/
+        clean: true
+        
     - name: Publish Test Report
       if: always()
       uses: dorny/test-reporter@v1
