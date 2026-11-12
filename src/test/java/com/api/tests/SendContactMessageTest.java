@@ -20,7 +20,7 @@ import io.restassured.response.Response;
 public class SendContactMessageTest {
 
 	@Test(description = "Verify if Compliant Message has been Sent..", dataProvider = "contactData", dataProviderClass = ContactDataProvider.class)
-	public void loginTest(String name, String email, String subject, String message) {
+	public void sendContactMessageTest(String name, String email, String subject, String message) {
 		SendNewContactRequest sendNewContactRequest = new SendNewContactRequest.Builder().name(name).email(email)
 				.subject(subject).message(message).build();
 

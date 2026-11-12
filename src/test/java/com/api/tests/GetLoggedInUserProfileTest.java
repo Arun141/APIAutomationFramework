@@ -18,7 +18,7 @@ import io.restassured.response.Response;
 public class GetLoggedInUserProfileTest {
 
 	@Test(description = "Verify the Logged In User Profile..")
-	public void loginTest() {
+	public void GetLoggedInUserProfile() {
 		LoginRequest loginRequest = new LoginRequest(ConfigReader.get("api.username"), ConfigReader.get("api.password"));
 		UserService userService = new UserService();
 		Response response = userService.login(loginRequest);

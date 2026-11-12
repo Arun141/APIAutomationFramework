@@ -17,8 +17,8 @@ import io.restassured.response.Response;
 public class UpdateBrandTest {
 	
 	@Test(description = "Create and Update a New Brand..")
-	public void loginTest() {
-		BrandRequest brandRequest =new  BrandRequest("abc brand1","abc-brand1");
+	public void upDateBrandTest() {
+		BrandRequest brandRequest =new  BrandRequest("abc brand01","abc-brand01");
 		
 		BrandService brandService = new BrandService();
 		Response response = brandService.createBrand(brandRequest);
